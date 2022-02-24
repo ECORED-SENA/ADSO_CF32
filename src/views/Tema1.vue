@@ -3,7 +3,7 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    .titulo-principal.color-acento-contenido.mb-0
+    .titulo-principal.color-acento-contenido.mb-0(data-aos="flip-up")
       .titulo-principal__numero
         span 1
       h1 #[i Hibernate]
@@ -27,7 +27,7 @@
                           p.text-white.text-end.mb-0 #[b Martinez (2015)]
                         img(src="@/assets/curso/tema1/img3.svg" style="width: 40px")
                 p Así que cuando estamos configurando Hibernate para conectarse a una base de datos lo que realmente pasa es que se configura Hibernate para el Uso del JDBC y es este quien realiza las operaciones.  A continuación se presenta el esquema general del funcionamiento:
-    img(src="@/assets/curso/tema1/img4.svg" style="width: 1100px").m-auto.mb-5
+    img(src="@/assets/curso/tema1/img4.svg" style="width: 1100px").m-auto.mb-5(data-aos="slide-right")
     p.mb-5 Para el desarrollo de una aplicación JAVA que usa el entorno de desarrollo de Eclipse es necesario descargar todas las librerías requeridas por el framework de Hibernate las cuales puede encontrar en la página oficial del ORM #[span.text-deco1.text-white #[a(href="https://hibernate.org/orm/" target="blank") https://hibernate.org/orm/]]. Una vez descargado el paquete este se debe descomprimir y podrá encontrar los archivos jar necesarios en la ubicación /lib/required los cuales deberá anexar al proyecto JAVA.
     .row.bg-color3.mb-5
       .col-12.px-5.px-lg-0
@@ -66,7 +66,7 @@
     .row.mb-5.ps-4.ps-md-1.bg-color6
       .col-8.col-lg-4.bg-color7
         h3.mb-0.text-white Hibernate Archivo de configuración
-    img(src="@/assets/curso/tema1/img6.svg" style="width: 1000px").m-auto.mb-5
+    img(src="@/assets/curso/tema1/img6.svg" style="width: 1000px").m-auto.mb-5(data-aos="slide-left")
     img(src="@/assets/curso/tema1/img3.png" style="width: 1300px").m-auto
     .row.justify-content-center
       .col-10.bg-color8
@@ -146,7 +146,7 @@
             .row
               .col-12.mb-4
                 p.me-0.me-md-4 Luego de esto se requiere definir todas las Entity Classes que serán utilizadas por Hibernate para realizar el proceso de mapeo hacia una base de datos relacional y viceversa. Una Entity Class básicamente es una clase Java tradicional que tiene las mismas características definidas una tabla de la base de datos, es decir, es una imagen de la tabla (ver siguiente figura) pero desde la perspectiva de la programación orientada a objetos que adicionalmente tiene unas anotaciones especiales que le permiten a Hibernate realizar el trabajo adecuado.
-    img(src="@/assets/curso/tema1/img9.svg" style="width: 1300px").m-auto.mb-5
+    img(src="@/assets/curso/tema1/img9.svg" style="width: 1300px").m-auto.mb-5(data-aos="slide-right")
     .cajon.color-primario.p-4.mb-5
       p.mb-0 Las anotaciones pueden ser utilizadas al importar la librería de persistencia de Java javax.persistence.*, entre las más utilizadas encontramos:
     .row.bg-color9
@@ -172,7 +172,7 @@
                   tr(style="background-color: #E8E8E8")
                     td @Id
                     td Permite especificar que el atributo a definir corresponde con el identificador primario a ser mapeado en la tabla.
-        img(src="@/assets/curso/tema1/img10.svg" style="width: 1000px").m-auto.mb-5
+        img(src="@/assets/curso/tema1/img10.svg" style="width: 1000px").m-auto.mb-5(data-aos="slide-left")
         p.mb-5 A continuación, se muestra un corto video donde se agrega el archivo de configuración de Hibernate al proyecto y se crea la clase Entity para la gestión de una tabla en una base de datos MySQL.
         figure.mb-5
           .video
@@ -231,7 +231,7 @@
                   p(style="margin-left:20px") #[span.text-deco11 factory]#[span.text-deco13 .close()]#[span.text-white ;]
                   p.mb-0 #[span.text-white }]
           .col-lg-4
-            img(src="@/assets/curso/tema1/img11.svg" style="width: 310px").m-auto
+            img(src="@/assets/curso/tema1/img11.svg" style="width: 310px").m-auto(data-aos="slide-left")
         p.mb-5 Note que en el código anterior para creación del objeto SessionFactory se indica el nombre del archivo de configuración de Hibernate en método configure(), si este parámetro no se incluyera Hibernate buscará en el directorio raíz del proyecto un archivo que contenga el nombre por defecto de este tipo de archivos de configuración el cual es hibernate.cfg.xml. También note que en el método addAnnotatedClass() se indica la clase de entidad a ser utilizada.
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul").mb-5
           .row(titulo="Método Save")
@@ -672,8 +672,8 @@
           .col-lg-5
             img(src="@/assets/curso/tema1/img8.png" style="width: 570px").m-auto
     .row.justify-content-center.mb-5
-      .col-lg-11#menu1
-        img(src="@/assets/curso/tema1/img22.svg" style="width: 1200px").m-auto
+      .col-lg-11.bg-color15#menu1
+        img(src="@/assets/curso/tema1/img22.svg" style="width: 1200px").m-auto(data-aos="slide-right")
     .row.justify-content-evenly
       .col-5.col-lg-4.mb-3.mb-lg-0
         a(href="#1A")
@@ -707,7 +707,7 @@
     .row.bg-color15
       .col-12
         .p-4
-          img(src="@/assets/curso/tema1/img27.svg" style="width: 1200px").m-auto.my-5
+          img(src="@/assets/curso/tema1/img27.svg" style="width: 1200px").m-auto.my-5(data-aos="slide-left")
     .cajon.color-primario.p-4
       p.mb-0 Mientras que en la base de datos se debe agregar un nuevo campo foráneo en la tabla usuario que haga referencia a la llave primaria de la tabla recurso para poder establecer la relación, en las clases de tipo entidad bastará con especificar el nuevo atributo del tipo de objeto correspondiente que referencia agregando de la anotación de tipo @OneToOne. Si el campo nuevo requerido en la tabla usuario no existe el mapeador de Hibernate se encargará de agregarlo.
     hr
@@ -733,7 +733,7 @@
     .row.bg-color15
       .col-12
         .p-4
-          img(src="@/assets/curso/tema1/img28.svg" style="width: 1200px").m-auto.my-5
+          img(src="@/assets/curso/tema1/img28.svg" style="width: 1200px").m-auto.my-5(data-aos="slide-right")
     .cajon.color-primario.p-4
       .row.align-items-center
         .col-lg-4.mb-4.mb-lg-0
@@ -762,7 +762,7 @@
     .row.bg-color15
       .col-12
         .p-4
-          img(src="@/assets/curso/tema1/img30.svg" style="width: 1200px").m-auto.mt-5
+          img(src="@/assets/curso/tema1/img30.svg" style="width: 1200px").m-auto.mt-5(data-aos="slide-right")
     separador
     #t_1_3
     .titulo-segundo.color-secundario

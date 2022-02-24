@@ -3,7 +3,7 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
       h1 #[i Spring]
@@ -31,7 +31,7 @@
     .row.mb-5.ps-4.ps-md-1.bg-color6
       .col-8.col-lg-4.bg-color7
         h3.mb-0.text-white Versiones de Spring Framework
-    img(src="@/assets/curso/tema2/img2.png" style="width: 1000px").m-auto.mb-5
+    img(src="@/assets/curso/tema2/img2.png" style="width: 1000px").m-auto.mb-5(data-aos="slide-right")
     p.mb-5 Unas de las características principales de Spring son:
     .row
       .col-lg-6.mb-4.mb-lg-0
@@ -49,7 +49,7 @@
             .col-12
               p Spring integra una variedad de módulos que se pueden integrar para el desarrollo de las aplicaciones.
       .col-lg-6
-        img(src="@/assets/curso/tema2/img1.svg" style="width: 470px").m-auto
+        img(src="@/assets/curso/tema2/img1.svg" style="width: 470px").m-auto(data-aos="slide-left")
     .row.bg-color16.mb-5
       .col-12.px-5
         .row.justify-content-center
@@ -130,14 +130,14 @@
                 .p-4
                   p #[b Inyección de Dependencias]: es un patrón de diseño de software, subtipo de inversión de control cuyo objetivo es tener un código fácil de mantener o desacoplado. Su función es determinar lo que los objetos necesitan.
                   p.mb-4 Existen 3 formas de realizar inyección de dependencias:
-                  img(src="@/assets/curso/tema2/img14.svg" style="width: 470px").m-auto
+                  img(src="@/assets/curso/tema2/img14.svg" style="width: 470px").m-auto(data-aos="slide-left")
     .row.mb-5.ps-4.ps-md-1.bg-color6
       .col-8.col-lg-4.bg-color7
         h3.mb-0.text-white Principio inversión de control
     .row.bg-color15
       .col-12
         .p-4
-          img(src="@/assets/curso/tema2/img15.svg" style="width: 800px").m-auto.mt-5
+          img(src="@/assets/curso/tema2/img15.svg" style="width: 800px").m-auto.mt-5(data-aos="slide-right")
     p.mb-5  A continuación, se muestra un ejemplo de código donde los objetos dependen entre sí:
     .row.mb-5.ps-4.ps-md-1.bg-color6
       .col-8.col-lg-4.bg-color7
@@ -169,7 +169,7 @@
     .row.align-items-center.mb-5
       .col-lg-6.tarjeta--azul
         .p-4
-          img(src="@/assets/curso/tema2/img20.svg" style="width: 570px").m-auto
+          img(src="@/assets/curso/tema2/img20.svg" style="width: 570px").m-auto(data-aos="slide-right")
       .col-lg-6
         p.mb-4 En el video se explican aspectos generales de la inyección de dependencias:
         .tarjeta.color-primario.p-3.mb-4
@@ -451,7 +451,7 @@
                 .col-12
                   p Implementación para aplicaciones orientadas a datos.
           .col-lg-6
-            img(src="@/assets/curso/tema2/img28.svg" style="width: 450px").m-auto
+            img(src="@/assets/curso/tema2/img28.svg" style="width: 450px").m-auto(data-aos="slide-left")
         .row.justify-content-center
           .col-10.mb-4
             .cajon.color-primario.p-4
@@ -488,6 +488,256 @@
     #t_2_3
     .titulo-segundo.color-secundario
       h2 2.3 Spring Boot y MySQL
+    .row.bg-color3.mb-5
+      .col-12.px-5.px-lg-1
+        .row.mb-4
+          .col-lg-4
+            img(src="@/assets/curso/tema2/img33.svg").m-auto
+          .col-lg-8
+            .row
+              .col-12.mt-5.mb-4.bg-color12
+                .p-4
+                  p.mb-0 Spring boot es una infraestructura liviana que suprime en gran parte la tarea de configurar las aplicaciones fundamentadas en Spring, Spring Boot  a diferencia de Spring Framework realiza una simplificación en cuanto a configuración y el despliegue de las aplicaciones.
+            p Para el ejemplo se realiza la clase Persona que representa una tabla en la base de datos llamada Persona.
+            ul.lista-ul.ms-3
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                | 
+                p.mb-0 Es intuitivo: permite crear aplicaciones rápidamente gracias a sus valores predeterminados.
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                |
+                p.mb-0 Permite crear aplicaciones que son independientes de Spring
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                |
+                p.mb-0 Incluye los servidores de Undertow, Tomcat o jetty.
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                |
+                p.mb-0 Usualmente realiza la configuración automática de librerías de Spring o de otros.
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                |
+                p.mb-0 No hay que realizar configuraciones de archivos XML.
+              li 
+                i.fas.fa-layer-group(style="color: #039BE5")
+                |
+                p.mb-0 Agiliza el desarrollo.
+    p.mb-5 Spring Boot cuenta con dos mecanismos que son los que permiten la simplificación de los procesos y son: Contenedor de aplicaciones integrado y Starters.
+    .tarjeta--container.row.mb-5
+      .col-md.tarjeta.color-primario.p-5
+        .row.justify-content-center.mb-4
+          .col-4
+            figure
+              img(src='@/assets/curso/tema2/img34.svg')
+        h2.text-center Contenedor de aplicaciones integrado
+        p La compilación de las aplicaciones web las compila como archivo .jar desplegado en un servidor tomcat facilitando la distribución de las aplicaciones, anteriormente se trabajaba con .war que si se requiere se puede seguir utilizando.
+      .col-md.tarjeta.color-acento-botones1.p-5
+        .row.justify-content-center.mb-4
+          .col-4
+            figure
+              img(src='@/assets/curso/tema2/img35.svg')
+        h2.text-center Starters
+        p Son los encargados de brindar una variedad de dependencias las cuales se agregan al proyecto, estas pueden ser de terceros o de Spring. Los starters por defecto traen una configuración de valores por defecto.
+    .cajon.color-primario.p-4.mb-5
+      p.mb-0 Otra de las ventajas de Spring boot es que ofrece un mecanismo que genera la estructura del proyecto de Spring Boot automáticamente, este inicializador crea el archivo pom.xml, el main de la aplicación y un archivo de test para verificar que la aplicación corre de forma correcta.
+    .row.mb-5.justify-content-center
+      .col-lg-8
+        .titulo-sexto.color-acento-contenido
+          p.mb-0 #[b Figura 5]. Inicializador de Spring
+        figure
+          img(src='@/assets/curso/tema2/img12.png')
+          figcaption.mt-3 Nota. https://start.spring.io/
+    img(src="@/assets/curso/tema2/img13.png" style="width: 1300px").m-auto
+    .row.justify-content-center
+      .col-10.bg-color8
+        .p-4
+          p.mb-0 A continuación, se realizan los pasos para la creación de un proyecto en Spring Boot. Recordar que se deben tener instaladas cualquiera de las herramientas de Entorno de desarrollo y JDK descritas anteriormente en la tabla 1 y tabla 2.
+    LineaTiempoD.color-primario.mb-5
+      .row(numero="1" titulo="Comienza un nuevo proyecto")
+        .col-12
+          p.mb-4 Ingresar a #[a(href="https://start.spring.io/" target="blank") start.spring.io] y crea un proyecto web.
+          img(src="@/assets/curso/tema2/img14.png" style="width: 1000px").m-auto
+      .row(numero="2" titulo="Ingresa el código")
+        .col-12
+          p.mb-4 Después de descargar el archivo que genera el inicializador ejecute su IDE y abra el archivo, una vez ubicado en la clase principal copiar el siguiente código para ejecutar un Hola mundo.
+          img(src="@/assets/curso/tema2/img15.png" style="width: 1000px").m-auto.mb-4
+          .cajon.color-primario.p-4
+            p.mb-0 Lo que hace el método hello() es recibir un parámetro de tipo String con el nombre de name y después concatenar este parámetro con la palabra Hello esto quiere decir que si se ingresa un nombre Zulema la salida seria “Hello Zulema”.
+      .row(numero="3" titulo="Prueba del proyecto")
+        .col-12
+          p.mb-4 Ahora solo es probar el proyecto para esto se debe abrir una consola Windows +r, se debe ubicar en la carpeta del proyecto y ejecutar el siguiente comando:
+          img(src="@/assets/curso/tema2/img36.svg" style="width: 1000px").m-auto.mb-4
+          p.mb-4 y se mostrará la siguiente imagen:
+          img(src="@/assets/curso/tema2/img16.png" style="width: 1000px").m-auto.mb-4
+          p.mb-4 Lo que hace es ejecutar el servidor Tomcat que ya viene por defecto dentro del Spring Boot, ahora se debe ingresar al navegador y escribir el localhost con el puerto 8080 y se mostrará la ejecución de la aplicación.  En la  siguiente video clase se explica de forma más detallada cómo utilizar Spring Boot:
+          figure
+            .video
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .row.bg-color3.mb-5
+      .col-12.px-5.px-lg-1
+        .row.mb-4
+          .col-lg-4
+            img(src="@/assets/curso/tema2/img17.png").m-auto
+          .col-lg-8
+            .row
+              .col-12.mt-5.mb-4.bg-color12
+                .p-4
+                  p #[b Spring boot y MySQL]: para tener una aplicación web completa es necesario almacenar información por esta razón es importante realizar conexiones con bases de datos.
+                  p Para  este ejemplo se mostrará cómo se realiza la conexión con la base de datos MYSQL.
+                  p Los requerimientos fundamentales son tener instalado MYSQL, el entorno de desarrollo y seguir estos pasos:
+    .tarjeta.tarjeta--azul1
+      .pt-4.px-4
+        SlyderA
+          .row.justify-content-center
+            .col-10
+              .row.justify-content-center.align-items-center.d-flex.flex-row
+                .col-auto
+                  p.mb-4.text-deeco23 01
+                .col-8
+                  .titulo-sexto.color-acento-contenido
+                    p.mb-0 #[b Declarar dependencias]: JPA, MySQL JDBC Driver, Web como se mostró en el ejemplo anterior por medio del inicializador se pueden seleccionar las dependencias requeridas como se muestra en la siguiente imagen.
+            .col-10
+              .row
+                .col-lg-8.mb-4.mb-lg-0
+                  img(src="@/assets/curso/tema2/img20.png" style="width: 900px").m-auto
+                .col-lg-4.align-bottom
+                  img(src="@/assets/curso/tema2/img18.png" style="width: 400px").m-auto
+          .row.justify-content-center
+            .col-10
+              .row.justify-content-center.align-items-center.d-flex.flex-row
+                .col-auto
+                  p.mb-4.text-deeco23 02
+                .col-8
+                  .titulo-sexto.color-acento-contenido
+                    p.mb-0 Después de agregar las dependencias clic en GENERATE y descargará un archivo zip el cuál se debe descomprimir y después importar el proyecto en el IDE para este caso Spring Tool Suite. Una vez importado el proyecto se puede ver cómo queda la estructura.
+            .col-10
+              .row
+                .col-lg-4.align-bottom
+                  img(src="@/assets/curso/tema2/img19.png" style="width: 300px").m-auto
+                .col-lg-8.mb-4.mb-lg-0
+                  img(src="@/assets/curso/tema2/img21.png" style="width: 400px").m-auto
+          .row.justify-content-center
+            .col-10
+              .row.justify-content-center.align-items-center.d-flex.flex-row
+                .col-auto
+                  p.mb-4.text-deeco23 03
+                .col-8
+                  .titulo-sexto.color-acento-contenido
+                    p.mb-0 El paso siguiente es abrir el archivo #[b “aplication.properties”] y configurar todas las propiedades de la conexión así:
+            .col-10
+              .row
+                .col-lg-8.mb-4.mb-lg-0
+                  ImagenInfografica.color-secundario
+                    template(v-slot:imagen)
+                      figure
+                        img(src='@/assets/curso/tema2/img38.svg')
+                    .tarjeta.color-acento-botones.p-3(x="2%" y="27%" numero="1")
+                      p.mb-0 #[b Línea 1]: permite obtener los metadatos de la base de datos.
+                    .tarjeta.color-acento-botones.p-3(x="2%" y="37%" numero="2")
+                      p.mb-0 #[b Línea 2]: se muestra la url de la conexión con el motor de base de datos.
+                    .tarjeta.color-acento-botones.p-3(x="2%" y="54%" numero="3")
+                      p.mb-0 #[b Línea 3]: se especifica el nombre del usuario de la base de datos para la conexión.
+                    .tarjeta.color-acento-botones.p-3(x="2%" y="64%" numero="4")
+                      p.mb-0 #[b Línea 4]: se especifica clave de la base de datos para la conexión.
+                    .tarjeta.color-acento-botones.p-3(x="2%" y="74.5%" numero="5")
+                      p.mb-0 #[b Línea 5]: la propiedad true permite utilizar las consultas JPA a realizar en la base de datos.
+                .col-lg-4.align-bottom
+                  img(src="@/assets/curso/tema2/img18.png" style="width: 400px").m-auto
+          .row.justify-content-center
+            .col-10
+              .row.justify-content-center.align-items-center.d-flex.flex-row
+                .col-auto
+                  p.mb-4.text-deeco23 04
+                .col-8
+                  .titulo-sexto.color-acento-contenido
+                    p.mb-0 Lo que queda es ejecutar la aplicación y comprobar que no existan problemas con la conexión a la base de datos. Para ejecutar dar clic derecho en el archivo java seleccionar la opción &gt;Run As y &gt;Spring Boot App. Si todo está bien ahora solo queda ir al motor de bases de datos y verificar si creó el esquema.
+            .col-10
+              .row
+                .col-lg-8.mb-4.mb-lg-0
+                  img(src="@/assets/curso/tema2/img22.png" style="width: 300px").m-auto
+                .col-lg-4.align-bottom
+                  img(src="@/assets/curso/tema2/img18.png" style="width: 400px").m-auto
+    separador.mb-5
+    #t_2_4
+    .titulo-segundo.color-secundario
+      h2 2.4 Validaciones
+    .row.bg-color3.mb-5
+      .col-12.px-5.px-lg-1
+        .row.mb-4
+          .col-lg-4
+            img(src="@/assets/curso/tema2/img23.png").m-auto
+          .col-lg-8
+            .row
+              .col-12.mt-5.mb-4.bg-color12
+                .p-4
+                  p.mb-0 Es muy importante realizar validaciones cuando se están desarrollando aplicaciones web en java para impedir que se ingresen datos que afecten al programa, en Sprint viene incluido el hibernate-validator en el paquete spring-boot-starter-web que permite validar valores de los campos Beans.
+            .row.justify-content-center
+              .col-lg-8
+                .row
+                  .col-12.bg-color11
+                    img(src="@/assets/curso/tema1/img8.svg")
+                  .col-12.bg-color10
+                    .p-4
+                      p.mb-0.text-deco21 &lt;dependency&gt;
+                      p.mb-0(style="margin-left:20px").text-deco21 &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                      p.mb-0(style="margin-left:20px").text-deco21 &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+                      p.mb-0(style="margin-left:20px").text-deco21 &lt;version&gt;2.0.0.RELEASE&lt;/version&gt;
+                      p.mb-0.text-deco21 &lt;/dependency&gt;
+    .row.justify-content-center.mb-5
+      .col-lg-8.bg-color20
+        .p-4
+          p.mb-0 #[b Para el ejemplo se realiza la creación de un bean con unas anotaciones que permiten la validación de ingreso de un usuario.]
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .row
+          .col-12.bg-color11
+            img(src="@/assets/curso/tema1/img8.svg")
+          .col-12.bg-color10
+            .p-4
+              p.mb-0.text-deco21 @Data
+              p.mb-0.text-deco21 @NoArgsConstructor
+              p.mb-0.text-deco21 public class Usuario{
+              p.mb-0(style="margin-left:20px").text-deco21 @NotBlank(message=“Debe ingresar un nombre de usuario”)
+              p(style="margin-left:20px").text-deco21 private String nombreUsuario;
+              p.mb-0(style="margin-left:20px").text-deco21 @NotBlank(message=“debe ingresar un valor correcto para la edad”)
+              p.mb-0(style="margin-left:20px").text-deco21 @Pattern(regexp=“^[0-9]{1,2}$”,message=“Edad incorrecta”)
+              p(style="margin-left:20px").text-deco21 private String edad;
+              p.mb-0(style="margin-left:20px").text-deco21 @AssertFalse(message = “Debe ser falso”)
+              p.mb-0(style="margin-left:20px").text-deco21 private Boolean esfalso;
+              p(style="margin-left:20px").text-deco21 /**           
+              p.mb-0(style="margin-left:20px").text-deco21 */
+              p.mb-0(style="margin-left:20px").text-deco21 @Pattern(regexp=“^[0-9]{4}-[0-9]{2}-[0-9]{2}$”,message=“No es correcto el formato de la fecha “)
+              p.mb-0(style="margin-left:20px").text-deco21 private String fechanaciemiento;
+              p.text-deco21 } 
+    .row.justify-content-center.mb-5
+      .col-lg-8.bg-color20
+        .p-4
+          p.mb-0 #[b Una vez se crean las anotaciones se debe crear el controlador.]
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .row
+          .col-12.bg-color11
+            img(src="@/assets/curso/tema1/img8.svg")
+          .col-12.bg-color10
+            .p-4
+              p.mb-0.text-deco21 @Controller
+              p.mb-0.text-deco21 public class userController{
+              p.mb-0(style="margin-left:20px").text-deco21 @RequestMapping(“/usuario”)
+              p.mb-0(style="margin-left:20px").text-deco21 public void create (@RequestBody @Validated Usuario usuario) {
+              p.mb-0(style="margin-left:20px").text-deco21 System.out.println(“hola:” + usuario.getNombreUsuario());
+              p.mb-0(style="margin-left:20px").text-deco21 }
+              p.text-deco21 }
+    p.mb-5 Una vez se realice el controlador se puede realizar la prueba enviando una solicitud Post.
+    .row.justify-content-center.mb-5
+      .col-lg-8.bg-color20
+        .p-4
+          p.mb-0 #[b {"nombreUsuario":"Ana","edad":120,"esFalso”: true,"nacimiento":"21010-21-12"}]
+    p La verificación que mostraría el resultado es:
+    .row.justify-content-center
+      .col-lg-8
+        img(src="@/assets/curso/tema2/img39.svg" style="width: 500px").m-auto
 
 </template>
 
