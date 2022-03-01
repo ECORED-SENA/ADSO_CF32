@@ -9,7 +9,7 @@
       .row.justify-content-center
         .col-10.bg-color21
           .p-4
-            p.mb-0 Los frameworks como Hibernate facilitan la conexión y manipulación de bases de datos relacionales ya que vienen configurados y optimizados para abstraer la complejidad propia de las bases de datos y permiten al desarrollador enfocarse en trabajar únicamente con el paradigma orientado a objetos. Adicionalmente una vez configurado el Framework facilita la realización de todo tipo de operación DML (SELECT, INSERT, UPDATE y DELETE) acelerando la velocidad en la que se pueden desarrollar aplicaciones JAVA que gestionan bases de datos relacionales. A continuación, se muestra un mapa conceptual de los elementos más importantes desarrollados en el primer apartado de este componente:
+            p.mb-0 Los #[i frameworks] como #[i Hibernate] facilitan la conexión y manipulación de bases de datos relacionales ya que vienen configurados y optimizados para abstraer la complejidad propia de las bases de datos y permiten al desarrollador enfocarse en trabajar únicamente con el paradigma orientado a objetos. Adicionalmente una vez configurado el #[i Framework] facilita la realización de todo tipo de operación DML (#[i SELECT], #[i INSERT], #[i UPDATE] y #[i DELETE]) acelerando la velocidad en la que se pueden desarrollar aplicaciones JAVA que gestionan bases de datos relacionales. A continuación, se muestra un mapa conceptual de los elementos más importantes desarrollados en el primer apartado de este componente:
       .row.bg-color15
         .col-12
           .p-4

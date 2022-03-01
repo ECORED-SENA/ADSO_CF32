@@ -15,20 +15,20 @@
           .col-lg-7
             .row
               .col-12
-                p.mt-5.mb-4 Hibernate es software libre con licencia GNU LGPL que presta servicios de ORM para JAVA, es decir, es plugin que puede ser integrado al IDE de desarrollo en JAVA que facilita el proceso de mapeo de tablas en una base de datos relacional a objetos Java mediante el uso de archivos declarativos en formato XML o anotaciones.
+                p.mt-5.mb-4 Hibernate es software libre con licencia GNU LGPL que presta servicios de ORM para JAVA, es decir, es plugin que puede ser integrado al IDE de desarrollo en JAVA que facilita el proceso de mapeo de tablas en una base de datos relacional a objetos JAVA mediante el uso de archivos declarativos en formato XML o anotaciones.
                 .row.mb-4.bg-color4.justify-content-end
                   .col-12
                     img(src="@/assets/curso/tema1/img2.svg" style="width: 50px; margin-left:40px")
                   .col-10
                     .p-4
-                      p.text-white Hibernate utiliza JDBC para todos los procesos de comunicación con la base de datos funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación JAVA podremos delegar la mayoría de las operaciones de bases de datos al framework de Hibernate pero en segundo plano todo estará pasando por el API de JDBC.
+                      p.text-white #[i Hibernate] utiliza JDBC para todos los procesos de comunicación con la base de datos funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación JAVA podremos delegar la mayoría de las operaciones de bases de datos al #[i framework] de #[i Hibernate] pero en segundo plano todo estará pasando por el API de JDBC.
                       .row.align-items-center
                         .col-10.d-inline
                           p.text-white.text-end.mb-0 #[b Martinez (2015)]
                         img(src="@/assets/curso/tema1/img3.svg" style="width: 40px")
-                p Así que cuando estamos configurando Hibernate para conectarse a una base de datos lo que realmente pasa es que se configura Hibernate para el Uso del JDBC y es este quien realiza las operaciones.  A continuación se presenta el esquema general del funcionamiento:
+                p Así que cuando estamos configurando #[i Hibernate] para conectarse a una base de datos lo que realmente pasa es que se configura #[i Hibernate] para el Uso del JDBC y es este quien realiza las operaciones.  A continuación se presenta el esquema general del funcionamiento:
     img(src="@/assets/curso/tema1/img4.svg" style="width: 1100px").m-auto.mb-5(data-aos="slide-right")
-    p.mb-5 Para el desarrollo de una aplicación JAVA que usa el entorno de desarrollo de Eclipse es necesario descargar todas las librerías requeridas por el framework de Hibernate las cuales puede encontrar en la página oficial del ORM #[span.text-deco1.text-white #[a(href="https://hibernate.org/orm/" target="blank") https://hibernate.org/orm/]]. Una vez descargado el paquete este se debe descomprimir y podrá encontrar los archivos jar necesarios en la ubicación /lib/required los cuales deberá anexar al proyecto JAVA.
+    p.mb-5 Para el desarrollo de una aplicación JAVA que usa el entorno de desarrollo de #[i Eclipse] es necesario descargar todas las librerías requeridas por el #[i framework] de #[i Hibernate] las cuales puede encontrar en la página oficial del ORM #[span.text-deco1.text-white #[a(href="https://hibernate.org/orm/" target="blank") https://hibernate.org/orm/]]. Una vez descargado el paquete este se debe descomprimir y podrá encontrar los archivos jar necesarios en la ubicación /lib/required los cuales deberá anexar al proyecto JAVA.
     .row.bg-color3.mb-5
       .col-12.px-5.px-lg-0
         .row
@@ -36,10 +36,10 @@
             .row.mt-3
               .col-12.mt-5.mb-4.bg-color5
                 .p-4
-                  p.mb-0 Debido a que Hibernate utiliza el Driver JDBC necesitará también descargar el Driver correspondiente a la base de datos a acceder desde su página oficial. Para el caso de MySQL podrá encontrar el Driver en: #[span.text-deco1.text-white #[a(href="https://dev.mysql.com/downloads/connector/j/" target="blank") https://dev.mysql.com/downloads/connector/j/]].
+                  p.mb-0 Debido a que #[i Hibernate] utiliza el #[i Driver] JDBC necesitará también descargar el #[i Driver] correspondiente a la base de datos a acceder desde su página oficial. Para el caso de MySQL podrá encontrar el #[i Driver] en: #[span.text-deco1.text-white #[a(href="https://dev.mysql.com/downloads/connector/j/" target="blank") https://dev.mysql.com/downloads/connector/j/]].
             .row
               .col-12.mb-4
-                p.ms-0.ms-lg-5 En el siguiente video se muestra un ejemplo de alistamiento de una aplicación Java en IDE de Eclipse para trabajar con Hibernate y una base de datos MySQL.
+                p.ms-0.ms-lg-5 En el siguiente video se muestra un ejemplo de alistamiento de una aplicación JAVA en IDE de #[i Eclipse] para trabajar con #[i Hibernate] y una base de datos MySQL.
             .tarjeta.color-primario.p-3.mb-5.ms-0.ms-lg-5
               .row.justify-content-around.align-items-center
                 .col-3.col-sm-2.col-lg-1
@@ -47,10 +47,10 @@
                 .col
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
-                      h3.mb-1.text-white Alistamiento Hibernate
+                      h3.mb-1.text-white Alistamiento #[i Hibernate]
                       p.text-small.text-white Estimado aprendiz, para profundizar sobre el tema puede consultar el siguiente video. 
                     .col-sm-auto
-                      a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                      a.boton.color-acento-contenido.texto-blanco(href="https://www.youtube.com/watch?v=wUV2JemOo9k" target="_blank")
                         span(style="color:#000000 !important") Ver
                         i.fas.fa-file-download(style="color:#000000 !important")
           .col-lg-5
@@ -62,10 +62,10 @@
     .row.justify-content-center
       .col-10.text-deco2
         .cajon.color-primario.p-4
-          p.mb-0 Teniendo en cuenta que Hibernate debe usar el Driver JDBC para la ejecución de las instrucciones en la base de datos se debe construir un archivo de configuración en formato XML donde se especifique la Url del JDBC y las credenciales de acceso a la base de datos.  En la siguiente figura se presenta el esquema general de funcionamiento en el proceso de configuración:
+          p.mb-0 Teniendo en cuenta que #[i Hibernate] debe usar el #[i Driver] JDBC para la ejecución de las instrucciones en la base de datos se debe construir un archivo de configuración en formato XML donde se especifique la Url del JDBC y las credenciales de acceso a la base de datos. En la siguiente figura se presenta el esquema general de funcionamiento en el proceso de configuración:
     .row.mb-5.ps-4.ps-md-1.bg-color6
       .col-8.col-lg-4.bg-color7
-        h3.mb-0.text-white Hibernate Archivo de configuración
+        h3.mb-0.text-white #[i Hibernate] Archivo de configuración
     img(src="@/assets/curso/tema1/img6.svg" style="width: 1000px").m-auto.mb-5(data-aos="slide-left")
     img(src="@/assets/curso/tema1/img3.png" style="width: 1300px").m-auto
     .row.justify-content-center
@@ -85,7 +85,7 @@
                 tbody
                   tr(style="background-color: #FFFFFF")
                     td connection.driver.class
-                    td Parte de la configuración del JDBC donde se define el driver a usar.
+                    td Parte de la configuración del JDBC donde se define el #[i driver] a usar.
                   tr(style="background-color: #E8E8E8")
                     td connection.url
                     td Parte de la configuración del JDBC donde se define la url de la base de datos a utilizar (protocolo: url base de datos: puerto / nombre DB).
@@ -94,20 +94,20 @@
                     td Parte de la configuración del JDBC donde se define el usuario de la base de datos a utilizar en la conexión.
                   tr(style="background-color: #E8E8E8")
                     td connection.password
-                    td Parte de la configuración del JDBC donde se define el password del usuario de la base de datos a utilizar en la conexión.
+                    td Parte de la configuración del JDBC donde se define el #[i password] del usuario de la base de datos a utilizar en la conexión.
                   tr(style="background-color: #FFFFFF")
                     td connection.pool_size
                     td Número de conexiones simultáneas al JDBC.
                   tr(style="background-color: #E8E8E8")
                     td dialect
-                    td Aunque SQL es un estándar, cada motor de bases de datos tiene una implementación particular. En esta propiedad se especifica el dialecto a utilizar por Hibernate.
+                    td Aunque SQL es un estándar, cada motor de bases de datos tiene una implementación particular. En esta propiedad se especifica el dialecto a utilizar por #[i Hibernate].
                   tr(style="background-color: #FFFFFF")
                     td show_sql
-                    td Esta propiedad permite ver en la salida estándar las sentencias SQL que ejecuta en background Hibernate lo cual sirve mucho para entender lo que está sucediendo en entornos de desarrollo.
+                    td Esta propiedad permite ver en la salida estándar las sentencias SQL que ejecuta en #[i background Hibernate] lo cual sirve mucho para entender lo que está sucediendo en entornos de desarrollo.
                   tr(style="background-color: #E8E8E8")
                     td current_session_context_class
-                    td Especifica el contexto de la sesión actual, por defecto se puede asignar thread.
-        p.mb-5 Es importante tener en cuenta que este archivo de configuración de Hibernate debe estar ubicado en la raíz de la carpeta src del proyecto de forma que pueda ser utilizado por Hibernate en cualquier contexto de la aplicación. A continuación, se muestra cómo debe verse un archivo de configuración de Hibernate completo donde se establece una conexión con una base de datos MySQL en un servidor que se está ejecutando en la máquina local en localhost y puerto 3306 con el usuario #[i root] y contraseña 12345:
+                    td Especifica el contexto de la sesión actual, por defecto se puede asignar #[i thread].
+        p.mb-5 Es importante tener en cuenta que este archivo de configuración de #[i Hibernate] debe estar ubicado en la raíz de la carpeta src del proyecto de forma que pueda ser utilizado por #[i Hibernate] en cualquier contexto de la aplicación. A continuación, se muestra cómo debe verse un archivo de configuración de #[i Hibernate] completo donde se establece una conexión con una base de datos MySQL en un servidor que se está ejecutando en la máquina local en #[i localhost] y puerto 3306 con el usuario #[i root] y contraseña 12345:
         .row.mb-5
           .col-12.bg-color11
             img(src="@/assets/curso/tema1/img8.svg")
@@ -145,10 +145,10 @@
                   p.mb-0 Se invita a revisar en los anexos el archivo de configuración mostrado anteriormente para que pueda ser descargado y utilizado en la construcción de su proyecto, teniendo en cuenta que debe editar las propiedades de acuerdo con sus necesidades.
             .row
               .col-12.mb-4
-                p.me-0.me-md-4 Luego de esto se requiere definir todas las Entity Classes que serán utilizadas por Hibernate para realizar el proceso de mapeo hacia una base de datos relacional y viceversa. Una Entity Class básicamente es una clase Java tradicional que tiene las mismas características definidas una tabla de la base de datos, es decir, es una imagen de la tabla (ver siguiente figura) pero desde la perspectiva de la programación orientada a objetos que adicionalmente tiene unas anotaciones especiales que le permiten a Hibernate realizar el trabajo adecuado.
+                p.me-0.me-md-4 Luego de esto se requiere definir todas las #[i Entity Classes] que serán utilizadas por #[i Hibernate] para realizar el proceso de mapeo hacia una base de datos relacional y viceversa. Una #[i Entity Class] básicamente es una clase #[i Java] tradicional que tiene las mismas características definidas una tabla de la base de datos, es decir, es una imagen de la tabla (ver siguiente figura) pero desde la perspectiva de la programación orientada a objetos que adicionalmente tiene unas anotaciones especiales que le permiten a #[i Hibernate] realizar el trabajo adecuado.
     img(src="@/assets/curso/tema1/img9.svg" style="width: 1300px").m-auto.mb-5(data-aos="slide-right")
     .cajon.color-primario.p-4.mb-5
-      p.mb-0 Las anotaciones pueden ser utilizadas al importar la librería de persistencia de Java javax.persistence.*, entre las más utilizadas encontramos:
+      p.mb-0 Las anotaciones pueden ser utilizadas al importar la librería de persistencia de JAVA javax.persistence.*, entre las más utilizadas encontramos:
     .row.bg-color9
       .col-12.px-5
         .row.justify-content-center
@@ -162,21 +162,21 @@
                 tbody
                   tr(style="background-color: #FFFFFF")
                     td @Entity
-                    td Especifica que la clase definida en una Entity Class.
+                    td Especifica que la clase definida en una #[i Entity Class].
                   tr(style="background-color: #E8E8E8")
                     td @Table(name = “ ”)
-                    td Permite especificar que la clase será mapeada con una tabla en la base de datos especificada en la propiedad name.
+                    td Permite especificar que la clase será mapeada con una tabla en la base de datos especificada en la propiedad #[i name].
                   tr(style="background-color: #FFFFFF")
                     td @Column(name = “ ”)
-                    td Permite especificar que el atributo por ser definido será mapeado con una columna especificada por la propiedad name. Cuando el nombre del atributo coincide con el nombre de la columna en la tabla se puede omitir la especificación de la propiedad name y solo dejar la anotación @Column.
+                    td Permite especificar que el atributo por ser definido será mapeado con una columna especificada por la propiedad #[i name]. Cuando el nombre del atributo coincide con el nombre de la columna en la tabla se puede omitir la especificación de la propiedad #[i name] y solo dejar la anotación @Column.
                   tr(style="background-color: #E8E8E8")
                     td @Id
                     td Permite especificar que el atributo a definir corresponde con el identificador primario a ser mapeado en la tabla.
         img(src="@/assets/curso/tema1/img10.svg" style="width: 1000px").m-auto.mb-5(data-aos="slide-left")
-        p.mb-5 A continuación, se muestra un corto video donde se agrega el archivo de configuración de Hibernate al proyecto y se crea la clase Entity para la gestión de una tabla en una base de datos MySQL.
+        p.mb-5 A continuación, se muestra un corto video donde se agrega el archivo de configuración de #[i Hibernate] al proyecto y se crea la clase #[i Entity] para la gestión de una tabla en una base de datos MySQL.
         figure.mb-5
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/fKlKfb5ftAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     #t_1_1
     .titulo-segundo.color-secundario
       h2 1.1 Operaciones básicas
@@ -189,7 +189,7 @@
             .row.mt-3
               .col-12.mt-2.mt-lg-4.mb-4.bg-color12
                 .p-4
-                  p.mb-0 Una vez se tienen registradas todas dependencias, los archivos de configuración de Hibernate y las respectivas clases de entidad se puede utilizar las facilidades ofrecidas por Hibernate para la manipulación de la base de datos de forma transparente por medio de los procesos de mapeo que ofrece este framework.
+                  p.mb-0 Una vez se tienen registradas todas dependencias, los archivos de configuración de #[i Hibernate] y las respectivas clases de entidad se puede utilizar las facilidades ofrecidas por #[i Hibernate] para la manipulación de la base de datos de forma transparente por medio de los procesos de mapeo que ofrece este #[i framework].
               .col-12.pe-1.pe-lg-5
                 p.mb-4 Hibernate utiliza principalmente dos clases que debemos utilizar, las cuales se describen a continuación:
                 .tabla-a.color-acento-botones.mb-4.mb-lg-0
@@ -200,15 +200,15 @@
                         th Descripción
                     tbody
                       tr(style="background-color: #FFFFFF")
-                        td SessionFactory
-                        td Esta clase lee el archivo de configuración de Hibernate y crea los objetos de sesión. Por ser una clase que genera objetos pesados por los procesos de los que es responsable solo debo crearlo una vez por toda la aplicación.
+                        td #[i SessionFactory]
+                        td Esta clase lee el archivo de configuración de #[i Hibernate] y crea los objetos de sesión. Por ser una clase que genera objetos pesados por los procesos de los que es responsable solo debo crearlo una vez por toda la aplicación.
                       tr(style="background-color: #E8E8E8")
-                        td SessionFactory
-                        td Esta clase envuelve todo lo correspondiente a una conexión JDBC y es el tipo de objeto que será usado para guardar o recibir objetos desde y hacia la base de datos. Es instanciado a partir de una clase SessionFactory. Los objetos creados de este tipo son más livianos por lo que pueden ser creados y desechados tantas veces como se necesite dentro de la aplicación.
+                        td #[i Session]
+                        td Esta clase envuelve todo lo correspondiente a una conexión JDBC y es el tipo de objeto que será usado para guardar o recibir objetos desde y hacia la base de datos. Es instanciado a partir de una clase #[i SessionFactory]. Los objetos creados de este tipo son más livianos por lo que pueden ser creados y desechados tantas veces como se necesite dentro de la aplicación.
     .row.bg-color9
       .col-12.px-5
         .cajon.color-primario.p-4.mb-5
-          p.mb-0 En el siguiente fragmento de código se muestra un esqueleto de como es el proceso de definición de los objetos SessionFactory y Session para poder hacer la manipulación de la base de datos.
+          p.mb-0 En el siguiente fragmento de código se muestra un esqueleto de como es el proceso de definición de los objetos #[i SessionFactory] y #[i Session] para poder hacer la manipulación de la base de datos.
         .row.mb-5
           .col-lg-8
             .row
@@ -232,11 +232,11 @@
                   p.mb-0 #[span.text-white }]
           .col-lg-4
             img(src="@/assets/curso/tema1/img11.svg" style="width: 310px").m-auto(data-aos="slide-left")
-        p.mb-5 Note que en el código anterior para creación del objeto SessionFactory se indica el nombre del archivo de configuración de Hibernate en método configure(), si este parámetro no se incluyera Hibernate buscará en el directorio raíz del proyecto un archivo que contenga el nombre por defecto de este tipo de archivos de configuración el cual es hibernate.cfg.xml. También note que en el método addAnnotatedClass() se indica la clase de entidad a ser utilizada.
+        p.mb-5 Note que en el código anterior para creación del objeto #[i SessionFactory] se indica el nombre del archivo de configuración de Hibernate en método #[i configure()], si este parámetro no se incluyera #[i Hibernate] buscará en el directorio raíz del proyecto un archivo que contenga el nombre por defecto de este tipo de archivos de configuración el cual es hibernate.cfg.xml. También note que en el método #[i addAnnotatedClass()] se indica la clase de entidad a ser utilizada.
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul").mb-5
-          .row(titulo="Método Save")
+          .row(titulo="Método <i>Save</i>")
             .col-12
-              p.mb-4 El método save() del objeto Session permite hacer el proceso de inserción de un nuevo registro en la base de datos enviando como parámetro un objeto de tipo entidad con sus valores. La forma correcta de hacer un proceso de inserción de un nuevo registro de una base de datos con un objeto de tipo sesión incluye los siguientes pasos:
+              p.mb-4 El método #[i save()] del objeto #[i Session] permite hacer el proceso de inserción de un nuevo registro en la base de datos enviando como parámetro un objeto de tipo entidad con sus valores. La forma correcta de hacer un proceso de inserción de un nuevo registro de una base de datos con un objeto de tipo sesión incluye los siguientes pasos:
               .row.mb-4
                 .col-6.col-lg-3
                   img(src="@/assets/curso/tema1/img12.svg").m-auto
@@ -279,10 +279,10 @@
                         p(style="margin-left:40px") #[span.text-white }]
                         p(style="margin-left:20px") #[span.text-white }]
                         p #[span.text-white }]
-          div(titulo="Método Get")
+          div(titulo="Método <i>Get</i>")
             .row
               .col-12
-                p.mb-5  El método get() del objeto session permite obtener un registro de la base de datos por medio de una consulta por su llave primaria. Este método recibe como parámetro la clase de entidad que será utilizada para hacer el mapeo del registro en la respuesta y un segundo parámetro que corresponde al valor a ser buscado en la llave primaria de la tabla. Este método ofrece como resultado un objeto de la clase de entidad especificado en la invocación del método. La forma correcta de hacer un proceso de consulta de un registro particular por medio de su llave primaria y un objeto de tipo session incluye los siguientes pasos:
+                p.mb-5  El método #[i get()] del objeto #[i session] permite obtener un registro de la base de datos por medio de una consulta por su llave primaria. Este método recibe como parámetro la clase de entidad que será utilizada para hacer el mapeo del registro en la respuesta y un segundo parámetro que corresponde al valor a ser buscado en la llave primaria de la tabla. Este método ofrece como resultado un objeto de la clase de entidad especificado en la invocación del método. La forma correcta de hacer un proceso de consulta de un registro particular por medio de su llave primaria y un objeto de tipo session incluye los siguientes pasos:
                 .row.align-items-center.justify-content-center
                   .col-lg-5.mb-5.mb-lg-0
                     img(src="@/assets/curso/tema1/img16.svg" style="width: 450px").m-auto
@@ -293,21 +293,21 @@
                       .tarjeta.tarjeta--blanca
                         .p-4
                           br
-                          p.mb-0 Iniciar una transacción por medio del método beginTransaction()
+                          p.mb-0 Iniciar una transacción por medio del método #[i beginTransaction()]
                           br
                     .tarjeta-avatar-b.mb-5
                       .tarjeta-avatar-b__img
                         img(src='@/assets/curso/tema1/img18.svg' alt='AvatarTop')
                       .tarjeta.tarjeta--blanca
                         .p-4
-                          p.mb-0 Invocar el método get() de la sesión enviando como parámetro la clase de tipo entidad para hacer mapeo y el valor de la llave primaria a buscar. La invocación de este método requiere de un objeto compatible que reciba el resultado.
+                          p.mb-0 Invocar el método #[i get()] de la sesión enviando como parámetro la clase de tipo entidad para hacer mapeo y el valor de la llave primaria a buscar. La invocación de este método requiere de un objeto compatible que reciba el resultado.
                     .tarjeta-avatar-b.mb-5
                       .tarjeta-avatar-b__img
                         img(src='@/assets/curso/tema1/img19.svg' alt='AvatarTop')
                       .tarjeta.tarjeta--blanca
                         .p-4
                           br
-                          p.mb-0 Confirmar la transacción realizada por medio del método getTransaction().commit()
+                          p.mb-0 Confirmar la transacción realizada por medio del método #[i getTransaction().commit()]
                           br
                 .row.justify-content-center
                   .col-lg-10
@@ -341,16 +341,16 @@
                           p(style="margin-left:40px") #[span.text-white }]
                           p(style="margin-left:20px") #[span.text-white }]
                           p #[span.text-white }]
-          div(titulo="Método CreateQuery")
+          div(titulo="Método <i>CreateQuery</i>")
             .row
               .col-12
                 .row.mb-4.align-items-center.justify-content-center
                   .col-lg-6.mb-4.mb-lg-0
                     img(src="@/assets/curso/tema1/img5.png").m-auto
                   .col-lg-6
-                    p Hibernate permite el proceso de creación de consultas usando HQL, el cual es una versión especial de Hibernate para establecer consultas SQL pero es orientado a objetos y comprende nociones propias del paradigma orientado a objetos como la herencia, el polimorfismo y las asociaciones. Es importante tener en cuenta que aunque las palabras reservadas y sentencias de SQL no son sensibles a mayúsculas los nombres de las clases y sus atributos usados en HQL si lo son.
+                    p #[i Hibernate] permite el proceso de creación de consultas usando HQL, el cual es una versión especial de #[i Hibernate] para establecer consultas SQL pero es orientado a objetos y comprende nociones propias del paradigma orientado a objetos como la herencia, el polimorfismo y las asociaciones. Es importante tener en cuenta que aunque las palabras reservadas y sentencias de SQL no son sensibles a mayúsculas los nombres de las clases y sus atributos usados en HQL si lo son.
                     .cajon.color-primario.p-4.bg-color13
-                      p.mb-0 Para el caso en el que se requiera realizar consultas más avanzadas se puede utilizar la potencia de HQL para establecer las características de los registros a ser consultados, como este tipo de consulta puede producir como resultado más de un registro proveniente de la base de datos es necesario usar el método getResultList(), para poder mapear la respuesta a una lista de objetos java.
+                      p.mb-0 Para el caso en el que se requiera realizar consultas más avanzadas se puede utilizar la potencia de HQL para establecer las características de los registros a ser consultados, como este tipo de consulta puede producir como resultado más de un registro proveniente de la base de datos es necesario usar el método #[i getResultList()], para poder mapear la respuesta a una lista de objetos JAVA.
                 p.mb-5 En la siguiente tabla se muestra algunas de las cláusulas HQL más comúnmente utilizadas, tengo en cuenta que en HQL se hace referencia a las clases de entidad JAVA con sus atributos los cuales son sensibles a mayúsculas y estas sentencias son mapeadas a su equivalente estructura en la base de datos usando los nombres de tablas y atributos los cuales ya no son sensibles a mayúsculas:
                 .row.justify-content-center.mb-5
                   .col-lg-8
@@ -385,7 +385,7 @@
                             td
                               p.mb-0 SELECT * FROM #[span.text-deco17 cat] cat
                               p INNER JOIN #[span.text-deco17 cat_mate] mate ON Cat#[span.text-deco17 .id] = mate#[span.text-deco17 .id]
-                p Para más información sobre las características y particularidades del lenguaje de consulta de Hibernate HQL se invita a consultar en los anexos la guía oficial de este lenguaje.
+                p Para más información sobre las características y particularidades del lenguaje de consulta de #[i Hibernate] HQL se invita a consultar en los anexos la guía oficial de este lenguaje.
                 p.mb-5 A continuación, se muestran diferentes ejemplos haciendo uso de consultas por medio de HQL:
                 .row.justify-content-center
                   .col-lg-10
@@ -442,7 +442,7 @@
           div(titulo="Actualizaciones")
             .row
               .col-12
-                p.mb-5 El proceso de actualización es muy similar al proceso de consulta ya que se puede hacer uso directo de los objetos obtenidos de las clases de entidad por medio de los métodos modificadores de sus atributos (Metodos set()) y confirmar las transacciones realizadas o también se puede hacer uso de createQuery() el cual permite enviar consultas HQL un poco más elaboradas pero asociándolo con el método executeUpdate() para que se reflejen los cambios en la base de datos una vez se confirma la transacción.
+                p.mb-5 El proceso de actualización es muy similar al proceso de consulta ya que se puede hacer uso directo de los objetos obtenidos de las clases de entidad por medio de los métodos modificadores de sus atributos (Metodos #[i set()]) y confirmar las transacciones realizadas o también se puede hacer uso de #[i createQuery()] el cual permite enviar consultas HQL un poco más elaboradas pero asociándolo con el método #[i executeUpdate()] para que se reflejen los cambios en la base de datos una vez se confirma la transacción.
                 .row.justify-content-center
                   .col-lg-10.mb-5
                     .row
@@ -506,13 +506,13 @@
                           p(style="margin-left:40px") #[span.text-white }]
                           p(style="margin-left:20px") #[span.text-white }]
                           p #[span.text-white }]
-          div(titulo="Método Delete")
+          div(titulo="Método <i>Delete</i>")
             .row
               .col-12
                 .row.justify-content-center
                   .col-lg-10
                     .cajon.color-primario.p-4.mb-5
-                      p.mb-0 El método delete() del objeto session permite eliminar un registro de la base de datos por medio de un objeto recibido como parámetro para identificar el registro de la tabla a eliminar. La forma correcta de hacer un proceso de eliminación de un registro particular incluye los siguientes pasos:
+                      p.mb-0 El método #[i delete()] del objeto session permite eliminar un registro de la base de datos por medio de un objeto recibido como parámetro para identificar el registro de la tabla a eliminar. La forma correcta de hacer un proceso de eliminación de un registro particular incluye los siguientes pasos:
                   .col-lg-10.mb-4.mb-lg-0
                     .row
                       .col-lg-7
@@ -522,7 +522,7 @@
                           .tarjeta.tarjeta--blanca
                             .p-4
                               br
-                              p.mb-0 Iniciar una transacción por medio del método beginTransaction()
+                              p.mb-0 Iniciar una transacción por medio del método #[i beginTransaction()]
                               br
                         .tarjeta-avatar-b.mb-4
                           .tarjeta-avatar-b__img
@@ -530,7 +530,7 @@
                           .tarjeta.tarjeta--blanca
                             .p-4
                               br
-                              p.mb-0 Utilizar un mecanismo para obtener una instancia de la clase entidad con el objeto que referencia del registro a eliminar ya sea por medio del método get() o CreateQuery.
+                              p.mb-0 Utilizar un mecanismo para obtener una instancia de la clase entidad con el objeto que referencia del registro a eliminar ya sea por medio del método #[i get()] o #[i CreateQuery].
                               br
                         .tarjeta-avatar-b.mb-4
                           .tarjeta-avatar-b__img
@@ -538,7 +538,7 @@
                           .tarjeta.tarjeta--blanca
                             .p-4
                               br
-                              p.mb-0 Invocar el método delete() del objeto de session pasando como parámetro el objeto que referencia el registro a eliminar.
+                              p.mb-0 Invocar el método #[i delete()] del objeto de #[i session] pasando como parámetro el objeto que referencia el registro a eliminar.
                               br
                         .tarjeta-avatar-b.mb-4
                           .tarjeta-avatar-b__img
@@ -546,7 +546,7 @@
                           .tarjeta.tarjeta--blanca
                             .p-4
                               br
-                              p.mb-0 Confirmar la transacción realizada por medio del método getTransaction().commit()
+                              p.mb-0 Confirmar la transacción realizada por medio del método #[i getTransaction().commit()]
                               br
                       .col-lg-5
                         img(src="@/assets/curso/tema1/img6.png" style="width: 450px").m-auto
@@ -629,10 +629,10 @@
                 .col
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
-                      h3.mb-1.text-white Método save
+                      h3.mb-1.text-white Método #[i save]
                       p.text-small.text-white Estimado aprendiz, para profundizar sobre el tema puede consultar el siguiente video.
                     .col-sm-auto
-                      a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                      a.boton.color-acento-contenido.texto-blanco(href="https://www.youtube.com/watch?v=_vElkMY1nOg" target="_blank")
                         span(style="color:#000000 !important") Ver video
             .tarjeta.color-primario.p-3.mb-4.ms-0.ms-lg-5
               .row.justify-content-around.align-items-center
@@ -641,10 +641,10 @@
                 .col
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
-                      h3.mb-1.text-white Método save
+                      h3.mb-1.text-white Consultas
                       p.text-small.text-white Estimado aprendiz, para profundizar sobre el tema puede consultar el siguiente video.
                     .col-sm-auto
-                      a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                      a.boton.color-acento-contenido.texto-blanco(href="https://www.youtube.com/watch?v=JgiGWa_cPA8" target="_blank")
                         span(style="color:#000000 !important") Ver video
             .tarjeta.color-primario.p-3.ms-0.ms-lg-5
               .row.justify-content-around.align-items-center
@@ -653,10 +653,10 @@
                 .col
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
-                      h3.mb-1.text-white Update y Delete
+                      h3.mb-1.text-white #[i Update] y #[i Delete]
                       p.text-small.text-white Estimado aprendiz, para profundizar sobre el tema puede consultar el siguiente video.
                     .col-sm-auto
-                      a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                      a.boton.color-acento-contenido.texto-blanco(href="https://www.youtube.com/watch?v=QiL6l9qMVWE" target="_blank")
                         span(style="color:#000000 !important") Ver video
     separador
     #t_1_2
@@ -692,7 +692,7 @@
     br
     .row.py-5.align-items-center.justify-content-between
       .col-6.col-lg-4
-        h3.text-white.mb-0.text-deco1 #[b Relaciones OneToOne]
+        h3.text-white.mb-0.text-deco1 #[b Relaciones #[i OneToOne]]
       .col-2
         a(href="#menu1")
           figure.efect1
@@ -709,13 +709,13 @@
         .p-4
           img(src="@/assets/curso/tema1/img27.svg" style="width: 1200px").m-auto.my-5(data-aos="slide-left")
     .cajon.color-primario.p-4
-      p.mb-0 Mientras que en la base de datos se debe agregar un nuevo campo foráneo en la tabla usuario que haga referencia a la llave primaria de la tabla recurso para poder establecer la relación, en las clases de tipo entidad bastará con especificar el nuevo atributo del tipo de objeto correspondiente que referencia agregando de la anotación de tipo @OneToOne. Si el campo nuevo requerido en la tabla usuario no existe el mapeador de Hibernate se encargará de agregarlo.
+      p.mb-0 Mientras que en la base de datos se debe agregar un nuevo campo foráneo en la tabla usuario que haga referencia a la llave primaria de la tabla recurso para poder establecer la relación, en las clases de tipo entidad bastará con especificar el nuevo atributo del tipo de objeto correspondiente que referencia agregando de la anotación de tipo @OneToOne. Si el campo nuevo requerido en la tabla usuario no existe el mapeador de #[i Hibernate] se encargará de agregarlo.
     hr
     #2A
     br
     .row.py-5.align-items-center.justify-content-between
       .col-9.col-lg-4
-        h3.text-white.mb-0.text-deco1 #[b Relaciones OneToMany - ManyToOne]
+        h3.text-white.mb-0.text-deco1 #[b Relaciones #[i OneToMany] - #[i ManyToOne]]
       .col-2
         a(href="#menu1")
           figure.efect1
@@ -725,7 +725,7 @@
         .p-4
           .row.align-items-center
             .col-12.tarjeta--blanca.mb-4
-              p Las relaciones OneToMany tiene la particularidad de afectar cada una de las entidades vinculadas en la relación y es importante identificar el lugar que es una relación OneToMany y en qué lugar la relación es ManyToOne.
+              p Las relaciones #[i OneToMany] tiene la particularidad de afectar cada una de las entidades vinculadas en la relación y es importante identificar el lugar que es una relación #[i OneToMany] y en qué lugar la relación es #[i ManyToOne].
             .col-lg-6
               p Recordando las reglas de transformación del modelo lógico de una base de datos relacional en este tipo de relaciones se indica que en la tabla del lado de la relación donde la cardinalidad máxima muchos (*) deberá ser transferido como un campo foráneo la llave primaria de la tabla donde la cardinalidad máxima es 1, como se aprecia en la siguiente figura:
             .col-lg-6
@@ -745,7 +745,7 @@
     br
     .row.py-5.align-items-center.justify-content-between
       .col-6.col-lg-4
-        h3.text-white.mb-0.text-deco1 #[b Relaciones ManyToMany]
+        h3.text-white.mb-0.text-deco1 #[b Relaciones #[i ManyToMany]]
       .col-2
         a(href="#menu1")
           figure.efect1
@@ -756,9 +756,9 @@
           .col-lg-5
             img(src="@/assets/curso/tema1/img11.png" style="width: 430px").m-auto
           .col-lg-7.mb-4.mb-lg-0
-            p.mt-4 Las relaciones ManyToMany obligan a la construcción de una nueva entidad de mapeo en la cual se alojarán las respectivas llaves primarias de las entidades vinculadas por medio de la relación @ManyToMany. Para su correcta implementación deberán agregarse en cada una de las clases entidad un objeto de tipo lista de la entidad a la cual está relacionada etiquetada con la anotación @ManyToMany. Adicionalmente en una de las clases de entidad deberá especificar el objeto de mapeo del otro extremo que será utilizado por Hibernate para realizar la asociación.
+            p.mt-4 Las relaciones #[i ManyToMany] obligan a la construcción de una nueva entidad de mapeo en la cual se alojarán las respectivas llaves primarias de las entidades vinculadas por medio de la relación @ManyToMany. Para su correcta implementación deberán agregarse en cada una de las clases entidad un objeto de tipo lista de la entidad a la cual está relacionada etiquetada con la anotación @ManyToMany. Adicionalmente en una de las clases de entidad deberá especificar el objeto de mapeo del otro extremo que será utilizado por #[i Hibernate] para realizar la asociación.
             .cajon.color-primario.p-4.bg-color13
-              p.mb-0 En el ejemplo siguiente, se establece una relación ManyToMany entre la clase Usuario y la clase Recurso por lo cual en cada una de ellas se agrega la correspondiente lista del tipo de entidad a la cual se asocian con la anotación @ManyToMany. En el caso de la clase Usuario se agrega el atributo de tipo lista de Recursos llamado recursos para indicar que un usuario puede estar vinculado con muchos recursos y por el lado de la clase Recursos se agrega una lista de tipo Usuario para indicar que un recurso puede estar vinculado con múltiples usuarios. Adicionalmente la relación entre usuario y recurso se mapea con el objeto users presente en la clase Recurso. La relación entre recurso y usuario no se mapea explícitamente por lo que generará la tabla intermedia recurso_usuario, lo cual cumple las reglas de transformación de un modelo lógico para una relación de muchos a muchos.
+              p.mb-0 En el ejemplo siguiente, se establece una relación #[i ManyToMany] entre la clase Usuario y la clase Recurso por lo cual en cada una de ellas se agrega la correspondiente lista del tipo de entidad a la cual se asocian con la anotación @ManyToMany. En el caso de la clase Usuario se agrega el atributo de tipo lista de Recursos llamado recursos para indicar que un usuario puede estar vinculado con muchos recursos y por el lado de la clase Recursos se agrega una lista de tipo Usuario para indicar que un recurso puede estar vinculado con múltiples usuarios. Adicionalmente la relación entre usuario y recurso se mapea con el objeto #[i users] presente en la clase Recurso. La relación entre recurso y usuario no se mapea explícitamente por lo que generará la tabla intermedia recurso_usuario, lo cual cumple las reglas de transformación de un modelo lógico para una relación de muchos a muchos.
     .row.bg-color15
       .col-12
         .p-4
@@ -786,19 +786,19 @@
                   .p-5
                     img(src="@/assets/curso/tema1/img33.svg" style="width: 100px").m-auto.mb-4
                     h4 Estado persistente
-                    p Corresponde al estado que logra el objeto una vez se conecta con una sesión de Hibernate, lo cual ocurre cuando se invoca por ejemplo una operación de tipo save() o cuando el objeto fue producto de realizar un proceso de consulta a la base de datos por un método get(). Todos los cambios que se realizan sobre un objeto en estado persistente son observados por Hibernate y podrán eventualmente realizar modificaciones en la base de datos.
+                    p Corresponde al estado que logra el objeto una vez se conecta con una sesión de Hibernate, lo cual ocurre cuando se invoca por ejemplo una operación de tipo #[i save()] o cuando el objeto fue producto de realizar un proceso de consulta a la base de datos por un método #[i get()]. Todos los cambios que se realizan sobre un objeto en estado persistente son observados por #[i Hibernate] y podrán eventualmente realizar modificaciones en la base de datos.
               .row.justify-content-center
                 .col-8.bg-color17
                   .p-5
                     img(src="@/assets/curso/tema1/img34.svg" style="width: 100px").m-auto.mb-4
                     h4 Estado independiente
-                    p A este estado pasan los objetos en estado persistentes una vez se realiza un cierre de sesión y en este momento son dejados de observar por Hibernate y cualquier cambio no será propagado en la base de datos. Un objeto independiente puede volver a ser persistente una vez se vuelva a abrir una nueva sesión y se use uno de los siguientes métodos save() o merge().
+                    p A este estado pasan los objetos en estado persistentes una vez se realiza un cierre de sesión y en este momento son dejados de observar por #[i Hibernate] y cualquier cambio no será propagado en la base de datos. Un objeto independiente puede volver a ser persistente una vez se vuelva a abrir una nueva sesión y se use uno de los siguientes métodos #[i save()] o #[i merge()].
               .row.justify-content-center
                 .col-8.bg-color17
                   .p-5
                     img(src="@/assets/curso/tema1/img35.svg" style="width: 100px").m-auto.mb-4
                     h4 Estado eliminado
-                    p Es el último estado en el ciclo de vida de un objeto de tipo entidad y ocurre cuando el objeto en cuestión es eliminado de la base de datos por medio del método delete(). Cualquier cambio realizado sobre este objeto no afectará la base de datos.
+                    p Es el último estado en el ciclo de vida de un objeto de tipo entidad y ocurre cuando el objeto en cuestión es eliminado de la base de datos por medio del método #[i delete()]. Cualquier cambio realizado sobre este objeto no afectará la base de datos.
     .cajon.color-primario.p-4.mb-5
       p.mb-0 A continuación, se muestra un resumen de los estados del ciclo de vida y sus transiciones completas con todos los posibles métodos.
     img(src="@/assets/curso/tema1/img36.svg" style="width: 1200px").m-auto

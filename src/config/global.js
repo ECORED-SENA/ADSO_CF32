@@ -138,25 +138,25 @@ export default {
     {
       termino: 'API',
       significado:
-        'conjunto de métodos ofrecidos por una librería que puede ser utilizado por otro software por medio de un conjunto de reglas establecidas.',
+        'conjunto de métodos ofrecidos por una librería que puede ser utilizado por otro <em>software</em> por medio de un conjunto de reglas establecidas.',
     },
     {
       termino: '<em>Framework</em>',
       significado:
-        'Es un marco o esquema de trabajo que define un conjunto de utilidades implementadas para un contexto particular para ser reutilizadas por los desarrolladores y así facilitar y acelerar el desarrollo de ciertas actividades propias de la construcción de software.',
+        'Es un marco o esquema de trabajo que define un conjunto de utilidades implementadas para un contexto particular para ser reutilizadas por los desarrolladores y así facilitar y acelerar el desarrollo de ciertas actividades propias de la construcción de <em>software</em>.',
     },
     {
-      termino: 'Groovy',
+      termino: '<em>Groovy</em>',
       significado:
-        'lenguaje de programación efectuado sobre la plataforma Java, el cual permite realizar Apis de JAVA.',
+        'lenguaje de programación efectuado sobre la plataforma JAVA, el cual permite realizar Apis de JAVA.',
     },
     {
       termino: 'HQL',
       significado:
-        'lenguaje de consulta parecido al SQL implementado por el framework Hibernate.',
+        'lenguaje de consulta parecido al SQL implementado por el <em>framework Hibernate</em>.',
     },
     {
-      termino: 'Kotlin',
+      termino: '<em>Kotlin</em>',
       significado:
         'lenguaje programación de tipado estático sencillo y fácil de entender y aprender.',
     },
@@ -170,7 +170,7 @@ export default {
       significado: 'API de persistencia de JAVA.',
     },
     {
-      termino: 'Plugin',
+      termino: '<em>Plugin</em>',
       significado:
         'Programas pequeños que se anexan a otros para ofrecer alguna funcionalidad nueva.',
     },
@@ -240,7 +240,43 @@ export default {
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
+        nombre: 'Zuleidy María Ruiz Torres',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Wilson Andrés Arenales Cáceres',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Gilberto Junior Rodriguez Rodriguez',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Yuli Marcela Gómez Tarazona',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Camilo Andrés Bolaño Rey',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Yicelly Estefania Mesa Silva',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Ernesto Navarro Jaimes',
         cargo: 'Producción audiovisual',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
@@ -251,7 +287,7 @@ export default {
         centro: 'Centro de Comercio y Servicios - Regional Tolima',
       },
       {
-        nombre: 'Nombre',
+        nombre: 'Yenny Patricia Ulloa Villamizar',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
