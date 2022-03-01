@@ -747,7 +747,7 @@
 export default {
   name: 'Tema2',
   data: () => ({
-    // variables de vue
+    indicadorTarjetaFlip: true,
   }),
   mounted() {
     this.$nextTick(() => {
