@@ -21,7 +21,7 @@
                     img(src="@/assets/curso/tema1/img2.svg" style="width: 50px; margin-left:40px")
                   .col-10
                     .p-4
-                      p.text-white #[i Hibernate] utiliza JDBC para todos los procesos de comunicación con la base de datos funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación JAVA podremos delegar la mayoría de las operaciones de bases de datos al #[i framework] de #[i Hibernate] pero en segundo plano todo estará pasando por el API de JDBC.
+                      p.text-white #[i Hibernate] utiliza JDBC para todos los procesos de comunicación con la base de datos funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación JAVA podremos delegar la mayoría de las operaciones de bases de datos al #[i framework] de #[i Hibernate] pero en segundo plano todo estará pasando por la API de JDBC.
                       .row.align-items-center
                         .col-10.d-inline
                           p.text-white.text-end.mb-0 #[b Martinez (2015)]
@@ -442,7 +442,7 @@
           div(titulo="Actualizaciones")
             .row
               .col-12
-                p.mb-5 El proceso de actualización es muy similar al proceso de consulta ya que se puede hacer uso directo de los objetos obtenidos de las clases de entidad por medio de los métodos modificadores de sus atributos (Metodos #[i set()]) y confirmar las transacciones realizadas o también se puede hacer uso de #[i createQuery()] el cual permite enviar consultas HQL un poco más elaboradas pero asociándolo con el método #[i executeUpdate()] para que se reflejen los cambios en la base de datos una vez se confirma la transacción.
+                p.mb-5 El proceso de actualización es muy similar al proceso de consulta ya que se puede hacer uso directo de los objetos obtenidos de las clases de entidad por medio de los métodos modificadores de sus atributos (Métodos #[i set()]) y confirmar las transacciones realizadas o también se puede hacer uso de #[i createQuery()] el cual permite enviar consultas HQL un poco más elaboradas pero asociándolo con el método #[i executeUpdate()] para que se reflejen los cambios en la base de datos una vez se confirma la transacción.
                 .row.justify-content-center
                   .col-lg-10.mb-5
                     .row

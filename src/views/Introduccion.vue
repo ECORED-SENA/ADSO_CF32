@@ -21,7 +21,7 @@
             .row
               .col-12
                 .p-4.bg-color2
-                  p Es en este contexto donde aparecen frameworks como Hibernate y Sprint para facilitar el proceso de transformación de información requerido entre el mundo de las bases de datos relacionales, la lógica de negocio y el mundo de la programación orientada a objetos.
+                  p Es en este contexto donde aparecen #[i frameworks] como #[i Hibernate] y #[i Spring] para facilitar el proceso de transformación de información requerido entre el mundo de las bases de datos relacionales, la lógica de negocio y el mundo de la programación orientada a objetos.
 
 
 </template>

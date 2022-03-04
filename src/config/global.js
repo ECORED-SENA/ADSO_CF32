@@ -3,7 +3,7 @@ export default {
     componenteFormativo:
       '<i>Frameworks</i> para construcción de aplicaciones con <i>JAVA</i>',
     descripcionCurso:
-      'Los requerimientos de software actuales cada vez son más exigentes en complejidad y tiempos de entrega, por lo cual se hace necesario incorporar <i>Frameworks</i> que faciliten la generación de código de alta calidad. A continuación, se hace la introducción al desarrollo de aplicaciones Java con los <i>frameworks Hibernate</i> y <i>Sprint</i>.',
+      'Los requerimientos de software actuales cada vez son más exigentes en complejidad y tiempos de entrega, por lo cual se hace necesario incorporar <i>Frameworks</i> que faciliten la generación de código de alta calidad. A continuación, se hace la introducción al desarrollo de aplicaciones Java con los <i>frameworks Hibernate</i> y <i>Spring</i>.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.svg'),
   },
@@ -51,7 +51,7 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: '<i>Sprint</i>',
+        titulo: '<i>Spring</i>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -63,13 +63,13 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: '<i>Sprint Data</i>',
+            titulo: '<i>Spring Data</i>',
             hash: 't_2_2',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.3',
-            titulo: '<i>Spring boot</i> y <i>MySQL</i>',
+            titulo: '<em>Spring boot</em> y MySQL',
             hash: 't_2_3',
           },
           {
@@ -84,7 +84,7 @@ export default {
     subMenu: [
       {
         icono: 'fas fa-sitemap',
-        titulo: 'Sintesis',
+        titulo: 'Síntesis',
         nombreRuta: 'sintesis',
       },
       {
@@ -163,11 +163,11 @@ export default {
     {
       termino: 'JDBC',
       significado:
-        'API para JAVA que permite el acceso y manipulación de bases de datos relacionales.',
+        ' API para JAVA que permite el acceso y manipulación de bases de datos relacionales.',
     },
     {
       termino: 'JPA',
-      significado: 'API de persistencia de JAVA.',
+      significado: ' API de persistencia de JAVA.',
     },
     {
       termino: '<em>Plugin</em>',

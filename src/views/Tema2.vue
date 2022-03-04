@@ -25,7 +25,7 @@
                         p.text-white Historia: Rod Johnson creador de #[i Spring] se da cuenta que necesitan una herramienta para simplificar y facilitar la construcción de aplicaciones JEE utilizando EJB y escribe el libro expert #[i one-on-one] J2EE #[i Development] que es un conjunto de buenas prácticas para la creación de aplicaciones empresariales y en el año 2004 lanza primera versión 1.2.6 de #[i Spring], según el autor era el inicio de J2EE tradicional.
                         .row.align-items-center
                           .col-10.d-inline
-                            p.text-white.text-end.mb-0 #[b Johnson,( 2004)]
+                            p.text-white.text-end.mb-0 #[b Johnson, ( 2004)]
                           img(src="@/assets/curso/tema1/img3.svg" style="width: 40px")
                   p La siguiente figura muestra las Versiones de #[i Spring Framework]:
     .row.mb-5.ps-4.ps-md-1.bg-color6
@@ -163,7 +163,7 @@
         .row
           .col-12.my-4.bg-color14.tarjeta--azul
             .p-4
-              p.mb-0 Resumiendo, la inversión de control es un patrón de programación para obtener un acoplamiento flexible logrando que los objetos independientes no sean responsables de sus dependencias si no que sean recibidas desde afuera; el contenedor de IOc recoge los metadatos que vienen de un archivo XML, o código JAVA, y recibe las indicaciones de los objetos que debe crearlos, enlazarlos, configurarlos y destruirlos por medio de POJOs (Objetos simples de Java) creando objetos por medio del proceso que recibe el nombre de #[i Spring Beans] y resultando objetos preparados para la inyección de dependencia.
+              p.mb-0 Resumiendo, la inversión de control es un patrón de programación para obtener un acoplamiento flexible logrando que los objetos independientes no sean responsables de sus dependencias sino que sean recibidas desde afuera; el contenedor de IOc recoge los metadatos que vienen de un archivo XML, o código JAVA, y recibe las indicaciones de los objetos que debe crearlos, enlazarlos, configurarlos y destruirlos por medio de POJOs (Objetos simples de Java) creando objetos por medio del proceso que recibe el nombre de #[i Spring Beans] y resultando objetos preparados para la inyección de dependencia.
         p La siguiente figura evidencia el funcionamiento de una vista abstracta de #[i Spring].
       .col-lg-6
         img(src="@/assets/curso/tema2/img5.png" style="width: 570px").m-auto
@@ -345,7 +345,7 @@
               .row
                 .col-12.bg-color12
                   .p-4
-                    p.mb-0 En la configuración del archivo se ve que la etiqueta #[i “bean”] referencia la clase AprendizBean.java, además el atributo #[i “class”] dirige a la dirección del proyecto y cuenta con un atributo id que permite agregar un nombre para poder identificarlo. Las demás etiquetas como #[i “property”] indican los atributos de la clase AprendizBean y con la etiqueta #[i “value”] se pueden agregar valores directos. Por medio de los métodos #[i get] y #[i set] el #[i Spring Container] (Contenedor de #[i Spring]) obtiene acceso y puede modificar los objetos de la clase AprendizBean. Con los archivos de configuración XML #[i Spring] facilita una clase de listas por cada uno de los #[i beans] existentes para poder hacer llamado de ellos y asi poder manipularlos desde otras clases sin tener que realizar varias instancias.
+                    p.mb-0 En la configuración del archivo se ve que la etiqueta #[i “bean”] referencia la clase AprendizBean.java, además el atributo #[i “class”] dirige a la dirección del proyecto y cuenta con un atributo id que permite agregar un nombre para poder identificarlo. Las demás etiquetas como #[i “property”] indican los atributos de la clase AprendizBean y con la etiqueta #[i “value”] se pueden agregar valores directos. Por medio de los métodos #[i get] y #[i set] el #[i Spring Container] (Contenedor de #[i Spring]) obtiene acceso y puede modificar los objetos de la clase AprendizBean. Con los archivos de configuración XML #[i Spring] facilita una clase de listas por cada uno de los #[i beans] existentes para poder hacer llamado de ellos y así poder manipularlos desde otras clases sin tener que realizar varias instancias.
           p.mb-5 En el siguiente código se muestra la implementación de Spring del control de los objetos del proyecto Sena.
           .row.justify-content-center
             .col-lg-8.mb-5
@@ -484,7 +484,7 @@
             img(src="@/assets/curso/tema2/img32.svg" style="width: 550px").m-auto
       .col-12
         .cajon.color-primario.p-4.mb-4
-            p.mb-0 Como se puede ver en el anterior código al extender de la clase #[i CrudRepository] nos facilita métodos como #[i findByNombre] que genera una consulta de todas las personas con el parámetro nombre que en base de datos relacionales seria SELECT * FROM persona WHERE nombre=? como se ve reduce considerablemente las sentencias permitiendo obtener consultas dinámicas.
+            p.mb-0 Como se puede ver en el anterior código al extender de la clase #[i CrudRepository] nos facilita métodos como #[i findByNombre] que genera una consulta de todas las personas con el parámetro nombre que en base de datos relacionales sería SELECT * FROM persona WHERE nombre=? como se ve reduce considerablemente las sentencias permitiendo obtener consultas dinámicas.
         p.mb-0 Otro de los grandes proyectos de #[i Spring] es #[i Spring Boot] que se describe a continuación.
     separador.mb-5
     #t_2_3
@@ -500,7 +500,7 @@
               .col-12.mt-5.mb-4.bg-color12
                 .p-4
                   p.mb-0 #[i Spring boot] es una infraestructura liviana que suprime en gran parte la tarea de configurar las aplicaciones fundamentadas en #[i Spring], #[i Spring Boot] a diferencia de #[i Spring Framework] realiza una simplificación en cuanto a configuración y el despliegue de las aplicaciones.
-            p las características de #[i Spring Boot]
+            p Las características de #[i Spring Boot]
             ul.lista-ul.ms-3
               li 
                 i.fas.fa-layer-group(style="color: #039BE5")
@@ -613,7 +613,7 @@
                   p.mb-4.text-deeco23 02
                 .col-8
                   .titulo-sexto.color-acento-contenido
-                    p.mb-0 Después de agregar las dependencias clic en #[i GENERATE] y descargará un archivo zip el cuál se debe descomprimir y después importar el proyecto en el IDE para este caso #[i Spring Tool Suite]. Una vez importado el proyecto se puede ver cómo queda la estructura.
+                    p.mb-0 Después de agregar las dependencias clic en #[i GENERATE] y descargará un archivo zip el cual se debe descomprimir y después importar el proyecto en el IDE para este caso #[i Spring Tool Suite]. Una vez importado el proyecto se puede ver cómo queda la estructura.
             .col-10
               .row
                 .col-lg-4.align-bottom
@@ -674,7 +674,7 @@
             .row
               .col-12.mt-5.mb-4.bg-color12
                 .p-4
-                  p.mb-0 Es muy importante realizar validaciones cuando se están desarrollando aplicaciones #[i web] en JAVA para impedir que se ingresen datos que afecten al programa, en Sprint viene incluido el #[i hibernate-validator] en el paquete #[i spring-boot-starter-web] que permite validar valores de los campos #[i Beans].
+                  p.mb-0 Es muy importante realizar validaciones cuando se están desarrollando aplicaciones #[i web] en JAVA para impedir que se ingresen datos que afecten al programa, en #[i Spring] viene incluido el #[i hibernate-validator] en el paquete #[i spring-boot-starter-web] que permite validar valores de los campos #[i Beans].
             .row.justify-content-center
               .col-lg-8
                 .row
